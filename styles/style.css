@@ -1,3 +1,9 @@
-*{
-    background-color: rgb(131, 186, 186);
+/* *{
+    margin: 0px;
+    padding: 0px;
+} */
+/* font inter */
+.inter-font {
+  font-family: "Inter", sans-serif;
 }
+

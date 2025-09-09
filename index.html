@@ -1,31 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Green Earth</title>
     <!-- style file added -->
-<link rel="stylesheet" href="./styles/style.css">
-<!-- favicon added -->
- <link rel="icon" href="./assets/about.png">
- <!-- tailwind and daisy ui -->
-  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-<!-- font inter -->
- <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-<!-- ------------ -->
+    <link rel="stylesheet" href="./styles/style.css">
+    <!-- favicon added -->
+    <link rel="icon" href="./assets/about.png">
+    <!-- tailwind and daisy ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- font inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- ------------ -->
 
 </head>
-<body>
-   
-   <h1 class="text-8xl py-10 px-3.5">
-    hello
-   </h1> 
 
+<body class="inter-font">
+
+    <!-- navbar -->
+    <div class="navbar bg-[#15803d] text-[#ffffff] px-4 lg:px-20">
+        <!-- Left side: Logo -->
+        <div class="navbar-start">
+            <a class="font-semibold text-xl">Green Earth</a>
+        </div>
+
+        <!-- Center: Links (only large screen) -->
+        <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+                <li><a>About</a></li>
+                <li><a>Gallery</a></li>
+                <li><a>Plant a Tree</a></li>
+            </ul>
+        </div>
+
+        <!-- Right side: Button (large screen) + Hamburger (small screen) -->
+        <div class="navbar-end">
+            <!-- Plant a Tree button (only lg and up) -->
+            <a class="btn rounded-3xl bg-[#facc15] text-[#15803d] border-none shadow-none hidden lg:inline-flex">
+                Plant a Tree
+            </a>
+
+            <!-- Hamburger dropdown (only small screen) -->
+            <div class="dropdown dropdown-end lg:hidden">
+                <div tabindex="0" role="button" class="btn btn-ghost">
+                    <!-- Hamburger Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </div>
+                <ul tabindex="0"
+                    class="menu menu-sm dropdown-content bg-base-100 text-black rounded-box z-10 mt-3 p-2 shadow flex flex-col items-center space-y-2 w-52">
+                    <li><a>About</a></li>
+                    <li><a>Gallery</a></li>
+                    <li><a>Plant a Tree</a></li>
+                    <li>
+                        <a class="btn rounded-3xl bg-[#facc15] text-[#15803d] border-none shadow-none">
+                            Plant a Tree
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <!-- Hero section  -->
+    <div class="bg-[#cff0dc] flex items-center flex-col md:flex-row">
+        <div>
+            <img src="./assets/hero-leaf1.png" alt="" class="hidden md:block">
+        </div>
+        <div class="text-center py-8 px-6 md:py-0">
+            <h1 class="text-4xl font-bold ">Plant a Tree, Grow a Future</h1>
+            <p class="text-lg font-light py-4 text-[#425158]">Join our mission to plant 1 million trees and make the
+                Earth greener for future
+                generations.</p>
+            <button class="btn rounded-3xl bg-[#facc15] text-[#15803d]">Get Involved</button>
+        </div>
+        <div>
+            <img src="./assets/hero-leaf2.png" alt="" class="hidden md:block">
+        </div>
+    </div>
+    <!-- JS funcationalities section  -->
+    <div class="bg-[#f0fdf4]">
+        <div>
+
+        </div>
+        <!-- About the Campaign -->
+        <div>
+            <h1 class="font-semibold text-xl text-center py-10">About the Campaign</h1>
+            <div class="flex  px-52 gap-10">
+                <div class="flex-1">
+                    <img src="./assets/about.png" alt="">
+                </div>
+                <div class="text-neutral-700 flex-1 items-center">
+                    <p class="">
+                        Green Earth is a global tree plantation initiative dedicated to fighting climate change. Since
+                        our
+                        start, we’ve planted over 500,000 trees worldwide. By joining our campaign, you help restore
+                        forests, create habitats for wildlife, and combat global warming.
+                    </p>
+                   
+                    <ul class="list-disc">
+                        <li>Restoration of natural habitats</li>
+                        <li>Improvement of air quality</li>
+                        <li>Support for local communities</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
 
 
     <script src="./scripts/script.js"></script>
 </body>
+
 </html>
